@@ -19,7 +19,7 @@ class ntp{
     path    => '/etc/ntp.conf',
     ensure  => file,
     require => Package['ntp'],
-    source  => '/tmp/$conf_file'
+    source  => 'puppet:///modules/ntp/$conf_file'
   }
 
   service{'ntp':
