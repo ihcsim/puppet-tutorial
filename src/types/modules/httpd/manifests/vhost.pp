@@ -1,4 +1,4 @@
- define apache::vhost(
+ define httpd::vhost(
   $port,
   $docroot,
   $template      = 'apache/vhost-default.conf.erb',
@@ -8,7 +8,7 @@
   $options       = "Indexes FollowSymLinks MultiViews",
   $vhost_name    = '*') {
 
-  include apache
+  include httpd
 
   if $servername == '' {
     $srvname = $title
