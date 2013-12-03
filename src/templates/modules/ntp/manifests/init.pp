@@ -11,10 +11,10 @@ class ntp{
     debian, ubuntu{
       $service_name = 'ntp'
       $conf_file = 'ntp.conf.el'
-      $default_servers = ["0.debian.pool.ntp.prg.iburst",
-                          "1.debian.pool.ntp.prg.iburst",
-                          "2.debian.pool.ntp.prg.iburst",
-                          "3.debian.pool.ntp.prg.iburst",
+      $default_servers = ["0.debian.pool.ntp.org.iburst",
+                          "1.debian.pool.ntp.org.iburst",
+                          "2.debian.pool.ntp.org.iburst",
+                          "3.debian.pool.ntp.org.iburst",
 
     }
   }
